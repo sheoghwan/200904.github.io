@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+    <script type="text/javascript">
+        window.onload = function() {
+            var buttons = document.querySelectorAll("input[type=button]");
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].onclick = function() {
+                    var img;
+                    switch(this.value)
+                    {
+                        case '이미지1': img = 'https://image.boom-app.wiki/wiki/5d15db16b1b4b868abc07b91/chara/s/001.jpg?w=120'; break;
+                        case '이미지2': img = 'https://image.boom-app.wiki/wiki/5d15db16b1b4b868abc07b91/chara/s/002.jpg?w=120'; break;
+                        case '이미지3': img = 'https://image.boom-app.wiki/wiki/5d15db16b1b4b868abc07b91/chara/s/003.jpg?w=120'; break;
+                        case '이미지4': img = 'https://image.boom-app.wiki/wiki/5d15db16b1b4b868abc07b91/chara/s/004.jpg?w=120'; break;
+                        case '이미지5': img = 'https://image.boom-app.wiki/wiki/5d15db16b1b4b868abc07b91/chara/s/005.jpg?w=120'; break;
+                        case '이미지6': img = 'https://image.boom-app.wiki/wiki/5d15db16b1b4b868abc07b91/chara/s/006.jpg?w=120'; break;
+                        case '이미지7': img = 'https://image.boom-app.wiki/wiki/5d15db16b1b4b868abc07b91/chara/s/007.jpg?w=120'; break;
+                        case '이미지8': img = 'https://image.boom-app.wiki/wiki/5d15db16b1b4b868abc07b91/chara/s/008.jpg?w=120'; break;
+                        case '이미지9': img = 'https://image.boom-app.wiki/wiki/5d15db16b1b4b868abc07b91/chara/s/009.jpg?w=120'; break;
+                        case '이미지10': img = 'https://image.boom-app.wiki/wiki/5d15db16b1b4b868abc07b91/chara/s/010.jpg?w=120'; break;
+                        case '이미지11': img = 'https://image.boom-app.wiki/wiki/5d15db16b1b4b868abc07b91/chara/s/011.jpg?w=120'; break;
+                        case '이미지12': img = 'https://image.boom-app.wiki/wiki/5d15db16b1b4b868abc07b91/chara/s/012.jpg?w=120'; break;
+                        case '이미지13': img = 'https://image.boom-app.wiki/wiki/5d15db16b1b4b868abc07b91/chara/s/013.jpg?w=120'; break;
+                        case '이미지14': img = 'https://image.boom-app.wiki/wiki/5d15db16b1b4b868abc07b91/chara/s/014.jpg?w=120'; break;
+                        case '이미지15': img = 'https://image.boom-app.wiki/wiki/5d15db16b1b4b868abc07b91/chara/s/015.jpg?w=120'; break;
+                        default: break;
+                    };
+
+                    if (img) {
+                        var child = document.createElement('img');
+                        child.setAttribute("src", img);
+                        child.setAttribute("width", "120");
+                        child.setAttribute("height", "120");
+                        document.getElementById('result').appendChild(child)
+                    }
+                    else {
+                        document.getElementById('result').innerHTML = '';
+                    }
+                };
+            };
+        };
+    </script>
+</head>
+
+<body>
+    <div>
+        <input type="button" value="토우마" />
+        <input type="button" value="인덱스" />
+        <input type="button" value="츠치미" />
+        <input type="button" value="레일건" />
+        <input type="button" value="쿠로코" />
+        <input type="button" value="식봉이" />
+        <input type="button" value="보액" />
+        <input type="button" value="청액" />
+        <input type="button" value="시스터즈" />
+        <input type="button" value="스테일" />
+        <input type="button" value="칸자키" />
+        <input type="button" value="셰리" />
+        <input type="button" value="타테미야" />
+        <input type="button" value="모두지우기" />
+    </div>
+    <div id="result">
+    </div>
+</body>
+
+</html>
