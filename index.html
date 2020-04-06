@@ -3,6 +3,15 @@
 	<head>
 		<title> とあるIF </title>
 		<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean" rel="stylesheet">
+		<script>
+	function change_background_color(o) {
+	o.style.backgroundColor = o.children[o.selectedIndex].style.backgroundColor;
+	}
+	function change_color(select) {
+    var color = select.options[select.selectedIndex].textContent;
+    document.body.style.backgroundColor = color;
+}
+	</script>
     <style>
       p {
         font-family: "Nanum Gothic", sans-serif;
@@ -31,6 +40,14 @@
 	<p class="a";> ※어떤 재료가 필요한지만 확인! </p>
 	<a href="test.html"> 클랜배틀 파티구성(TEST)</a>
 	<p class="b";> 3성 배틀 (星3 バトル) </p>
+	<select name="colorPick" onchange="change_color(this);">
+    <option value="0">배경색 바꾸기</option>
+    <option value="1">#A3CCA2</option>
+    <option value="2">#FBCEB1</option>
+    <option value="3">#FDBCB4</option>
+</select>
+<br>
+<br>
         <!--<p class="indent"> ┌─ Low ──┐ </p> -->
 	<img align="left" src="https://image.boom-app.wiki/wiki/5d15db16b1b4b868abc07b91/chara/s/004.jpg?w=120" style="border: 2px solid rgb(0, 255, 0);">
 	<img align="left" src="https://image.boom-app.wiki/wiki/5d15db16b1b4b868abc07b91/chara/s/002.jpg?w=120" style="border: 2px solid rgb(0, 255, 0);">
